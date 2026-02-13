@@ -152,17 +152,6 @@ Passionate about crafting high-performance and visually stunning iOS application
 
 ---
 
-## 📂 Open Source & Projects
-
-| Project | Description |
-|---|---|
-| [fantastic-ios-architecture](https://github.com/MedRadhouenElhaj/fantastic-ios-architecture) | 🏯 Better ways to structure iOS apps |
-| [LayoutInspector](https://github.com/MedRadhouenElhaj/LayoutInspector) | Tool to debug layouts directly on iOS devices: inspect layers in 3D |
-| [AwesomeKeyPath](https://github.com/MedRadhouenElhaj/AwesomeKeyPath) | A library on KeyPath for DataBinding, Predicate building, Testing |
-| [FittedSheets](https://github.com/MedRadhouenElhaj/FittedSheets) | Bottom sheets for iOS |
-
----
-
 ## 🌐 Languages
 
 - 🇹🇳 Arabic (Native or Bilingual)
