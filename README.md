@@ -26,16 +26,30 @@ Passionate about crafting high-performance and visually stunning iOS application
 #### Lead iOS Developer and Project Manager — Cinéma Pathé
 *January 2025 – Present*
 
+- Leading the iOS development team and managing project delivery for the Cinéma Pathé mobile application serving millions of cinema-goers across France
+- Defining technical roadmaps, sprint planning, and backlog prioritization in collaboration with product owners and stakeholders
+- Coordinating cross-functional collaboration between iOS, Android, backend, QA, and design teams to ensure timely feature releases
+- Driving architectural decisions and enforcing best practices for code quality, scalability, and maintainability
+- Overseeing App Store release cycles, including submission, review management, and post-release monitoring
+
 #### Lead iOS Developer — Cinéma Pathé
 *September 2023 – December 2024 (1 year 4 months)*
+
+- Led the iOS team in building and shipping major features for the Cinéma Pathé app, including ticket booking flows, loyalty programs, and seat selection interfaces
+- Mentored junior and mid-level developers through code reviews, pair programming sessions, and knowledge-sharing workshops
+- Spearheaded the migration of legacy UIKit components to modern SwiftUI-based architecture, improving code maintainability and development velocity
+- Implemented CI/CD pipelines and automated testing strategies to reduce regression bugs and accelerate release cycles
+- Collaborated closely with UX/UI designers to translate complex user journeys into intuitive and performant mobile experiences
 
 #### iOS Developer — Cinéma Pathé
 *October 2022 – August 2023 (11 months)*
 
-- Maintaining existing apps
-- Development of new features
-- Refactoring UI components
-- Reviewing code
+- Maintained and enhanced the existing Cinéma Pathé iOS application, resolving critical bugs and improving app stability
+- Developed new features including showtime browsing, cinema geolocation, and push notification integration
+- Refactored UI components for improved performance and consistency across different device sizes and iOS versions
+- Conducted thorough code reviews to maintain high code quality standards and ensure adherence to architectural guidelines
+- **Languages & Technologies:** Swift, SwiftUI, UIKit, Combine, Core Data, REST APIs
+- **Tools:** Xcode, Git, GitFlow, JIRA, Figma, Fastlane
 
 ---
 
@@ -45,11 +59,12 @@ Passionate about crafting high-performance and visually stunning iOS application
 #### Team Lead iOS Developer
 *February 2020 – October 2022 (2 years 9 months)*
 
-- Development of NeoBank iOS Application
-- Development of an E-Commerce iOS Application
-- Development of Consultancy app (Istishara)
-- Development of webview app
-- Development of social media app
+- Led a team of iOS developers, conducting code reviews, mentoring team members, and defining technical standards for mobile projects
+- Architected and developed a **NeoBank iOS Application** from the ground up, implementing secure authentication, real-time transaction tracking, account management, and payment features using Swift and UIKit
+- Built a full-featured **E-Commerce iOS Application** with product catalog browsing, cart management, checkout flows, and order tracking capabilities
+- Developed **Istishara**, a consultancy app enabling real-time video/audio consultations with professionals, integrating TwilioSDK for communication and Firebase for real-time data synchronization
+- Created a social media application featuring user profiles, feeds, media sharing, real-time messaging, and push notifications
+- Developed a configurable webview-based application with native bridge communication for hybrid content delivery
 - **Languages & Technologies:** iOS, Swift, UIKit, Core Animation, AVFoundation, CoreImage, Metal, TwilioSDK, Firebase SDK
 - **Design Patterns:** Coordinator, Observer
 - **Tools:** Xcode, Postman, Git, GitFlow, GitLab, JIRA, Zeplin
@@ -58,14 +73,17 @@ Passionate about crafting high-performance and visually stunning iOS application
 #### iOS Developer
 *August 2019 – January 2020 (6 months)* &nbsp;|&nbsp; Ariana, Tunisia
 
-- Development of NeoBank iOS Application
+- Contributed to the development of the NeoBank iOS Application, implementing core banking features including account overview, transaction history, and fund transfer workflows
+- Collaborated with backend teams to integrate RESTful APIs and ensure reliable data synchronization
+- Participated in sprint planning, daily standups, and retrospectives as part of an Agile development process
 - **Languages & Technologies:** iOS, Swift, UIKit, Core Animation
 - **Tools:** Xcode, Postman, Git, GitFlow, GitLab, JIRA, Zeplin
 
 #### iOS Development Intern
 *January 2019 – July 2019 (7 months)* &nbsp;|&nbsp; Ariana, Tunisia
 
-- Development of NeoBank iOS Application
+- Contributed to the development of the NeoBank iOS Application, building UI screens and integrating API services under senior developer guidance
+- Gained hands-on experience with iOS development best practices, version control workflows, and Agile methodologies
 - **Languages & Technologies:** iOS, Swift, UIKit, Core Animation
 
 ---
@@ -74,8 +92,9 @@ Passionate about crafting high-performance and visually stunning iOS application
 #### Software Engineering Intern
 *July 2018 – September 2018 (3 months)* &nbsp;|&nbsp; Ariana, Tunisia
 
-- Conception and development of a web application for collecting data for an inquiry about ESPRIT students' post-graduation situation and providing statistics (Angular 4, LinkedIn SDK, Node.js, MySQL)
-- Conception and development of a web application for full management of ESPRIT PiDev projects (Symfony 3.4, PHP, MySQL)
+- Designed and developed a web application for collecting and analyzing data from a post-graduation survey of ESPRIT alumni, providing interactive dashboards and statistical visualizations for career tracking insights
+- Built a comprehensive project management web application for ESPRIT's PiDev (end-of-studies) projects, enabling supervisors and students to manage submissions, track progress, and coordinate evaluations
+- **Technologies:** Angular 4, LinkedIn SDK, Node.js, Symfony 3.4, PHP, MySQL
 
 ---
 
@@ -83,7 +102,8 @@ Passionate about crafting high-performance and visually stunning iOS application
 #### Freelance Web Developer
 *June 2017 – July 2017 (2 months)* &nbsp;|&nbsp; Tunis, Tunisia
 
-- Design and development of [kuenstlerdienste.eu](http://www.kuenstlerdienste.eu/) website for displaying models and an administration platform
+- Designed and developed the [kuenstlerdienste.eu](http://www.kuenstlerdienste.eu/) website, a platform for showcasing talent profiles and portfolios with an integrated administration panel for content and model management
+- Implemented responsive front-end design and a custom CMS backend for dynamic content updates
 - **Technologies:** Symfony 3.x, HTML5, CSS3, Bootstrap 3.x
 
 ---
@@ -92,10 +112,10 @@ Passionate about crafting high-performance and visually stunning iOS application
 #### Web Development Intern
 *February 2016 – May 2016 (4 months)* &nbsp;|&nbsp; Tunis, Tunisia
 
-- Handling preregistration for applicants to the training center
-- Platform for grades, timetables, and courses
-- Admin platform for users and dynamic website content
-- End-of-studies project management platform
+- Developed a preregistration system for training center applicants, streamlining the enrollment process with automated form handling and status tracking
+- Built an academic platform providing students with access to grades, timetables, course materials, and announcements
+- Created an admin dashboard for managing users, roles, and dynamic website content
+- Implemented an end-of-studies project management module for tracking submissions, supervisor assignments, and evaluation workflows
 - **Technologies:** Symfony 3, PHP5, MySQL, Bootstrap, HTML5, CSS3
 
 ---
@@ -103,6 +123,9 @@ Passionate about crafting high-performance and visually stunning iOS application
 ### SOREPCO Composites World
 #### Web Development Intern
 *June 2014 – July 2014 (2 months)*
+
+- Assisted in the development of internal web tools for the composites manufacturing company
+- Gained foundational experience in web development workflows and professional software development practices
 
 ---
 
