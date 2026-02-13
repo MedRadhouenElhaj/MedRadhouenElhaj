@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Radhouen Elhaj — iOS Developer Resume</title>
+    <style>
+        :root {
+            --primary: #0A66C2;
+            --primary-light: #E8F1FB;
+            --text: #1D1D1F;
+            --text-secondary: #555;
+            --border: #E0E0E0;
+            --bg: #FFFFFF;
+            --bg-alt: #F8F9FA;
+            --accent: #147EFB;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text);
+            background: var(--bg-alt);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 32px auto;
+            background: var(--bg);
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.04);
+            overflow: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #0A66C2 0%, #004182 100%);
+            color: #fff;
+            padding: 48px 48px 40px;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .header .headline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 16px;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.9rem;
+            margin-top: 12px;
+        }
+
+        .contact-row a {
+            color: #fff;
+            text-decoration: none;
+            opacity: 0.85;
+            transition: opacity 0.2s;
+        }
+
+        .contact-row a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .contact-row span {
+            opacity: 0.85;
+        }
+
+        /* Main content */
+        .content {
+            padding: 40px 48px 48px;
+        }
+
+        .section {
+            margin-bottom: 36px;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* About */
+        .about p {
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        .strengths {
+            list-style: none;
+            padding: 0;
+        }
+
+        .strengths li {
+            padding: 6px 0;
+            color: var(--text-secondary);
+        }
+
+        .strengths li strong {
+            color: var(--text);
+        }
+
+        /* Experience */
+        .company {
+            margin-bottom: 28px;
+        }
+
+        .company-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 4px;
+        }
+
+        .company-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .company-meta {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .role {
+            margin: 16px 0 8px 0;
+            padding-left: 16px;
+            border-left: 3px solid var(--accent);
+        }
+
+        .role-title {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .role-period {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-bottom: 6px;
+        }
+
+        .role ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin-top: 6px;
+        }
+
+        .role li {
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+            line-height: 1.5;
+        }
+
+        .tech-line {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 6px;
+        }
+
+        .tech-line strong {
+            color: var(--text);
+        }
+
+        /* Education */
+        .edu-item {
+            margin-bottom: 14px;
+        }
+
+        .edu-item h4 {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .edu-item p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Skills table */
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+        }
+
+        .skills-table th,
+        .skills-table td {
+            text-align: left;
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .skills-table th {
+            background: var(--bg-alt);
+            font-weight: 600;
+            color: var(--text);
+            width: 160px;
+        }
+
+        .skills-table td {
+            color: var(--text-secondary);
+        }
+
+        /* Languages */
+        .lang-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .lang-list li {
+            padding: 4px 0;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 24px 48px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Print styles */
+        @media print {
+            body { background: #fff; }
+            .container { box-shadow: none; margin: 0; border-radius: 0; }
+            .header { padding: 32px 40px 28px; }
+            .content { padding: 28px 40px 32px; }
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .container { margin: 0; border-radius: 0; }
+            .header, .content, .footer { padding-left: 24px; padding-right: 24px; }
+            .header h1 { font-size: 1.6rem; }
+            .contact-row { flex-direction: column; gap: 6px; }
+            .company-header { flex-direction: column; }
+            .skills-table th { width: 120px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Mohamed Radhouen Elhaj</h1>
+        <div class="headline">iOS Consultant @ Jems Group | iOS Development, Swift</div>
+        <div class="contact-row">
+            <span>📍 Gennevilliers, Île-de-France, France</span>
+            <a href="mailto:med.radhouen.elhaj@gmail.com">📧 med.radhouen.elhaj@gmail.com</a>
+            <span>📱 +33 745522764</span>
+        </div>
+        <div class="contact-row">
+            <a href="https://www.linkedin.com/in/mohamedradhouenelhaj/" rel="noopener noreferrer">🔗 LinkedIn</a>
+            <a href="https://github.com/MedRadhouenElhaj" rel="noopener noreferrer">🐙 GitHub</a>
+            <a href="https://twitter.com/ElhajRadhouen" rel="noopener noreferrer">🐦 X (Twitter)</a>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- About Me -->
+        <div class="section about">
+            <h2 class="section-title">👤 About Me</h2>
+            <p>Passionate about crafting high-performance and visually stunning iOS applications, I am an experienced iOS Developer with a focus on delivering seamless user experiences. My expertise spans various domains, including <strong>Fintech</strong>, <strong>Ecommerce</strong>, <strong>IoT</strong>, and <strong>Social Media</strong> apps.</p>
+            <p><strong>Key Strengths:</strong></p>
+            <ul class="strengths">
+                <li><strong>Technical Proficiency:</strong> Adept at leveraging the latest technologies and trends in iOS development to create robust and efficient applications.</li>
+                <li><strong>Team Collaboration:</strong> A dedicated team player thriving in collaborative environments and excelling under pressure, with experience in cross-functional teams.</li>
+                <li><strong>Continuous Learner:</strong> Committed to staying at the forefront of iOS development, actively seeking opportunities to learn and implement emerging techniques and technologies.</li>
+            </ul>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="section">
+            <h2 class="section-title">💼 Professional Experience</h2>
+
+            <!-- Jems Group -->
+            <div class="company">
+                <div class="company-header">
+                    <span class="company-name">Jems Group</span>
+                    <span class="company-meta">3 years 5 months · Paris, Île-de-France, France</span>
+                </div>
+
+                <div class="role">
+                    <div class="role-title">Lead iOS Developer and Project Manager — Cinéma Pathé</div>
+                    <div class="role-period">January 2025 – Present</div>
+                    <ul>
+                        <li>Leading the iOS development team and managing project delivery for the Cinéma Pathé mobile application serving millions of cinema-goers across France</li>
+                        <li>Defining technical roadmaps, sprint planning, and backlog prioritization in collaboration with product owners and stakeholders</li>
+                        <li>Coordinating cross-functional collaboration between iOS, Android, backend, QA, and design teams to ensure timely feature releases</li>
+                        <li>Driving architectural decisions and enforcing best practices for code quality, scalability, and maintainability</li>
+                        <li>Overseeing App Store release cycles, including submission, review management, and post-release monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="role">
+                    <div class="role-title">Lead iOS Developer — Cinéma Pathé</div>
+                    <div class="role-period">September 2023 – December 2024 (1 year 4 months)</div>
+                    <ul>
+                        <li>Led the iOS team in building and shipping major features for the Cinéma Pathé app, including ticket booking flows, loyalty programs, and seat selection interfaces</li>
+                        <li>Mentored junior and mid-level developers through code reviews, pair programming sessions, and knowledge-sharing workshops</li>
+                        <li>Spearheaded the migration of legacy UIKit components to modern SwiftUI-based architecture, improving code maintainability and development velocity</li>
+                        <li>Implemented CI/CD pipelines and automated testing strategies to reduce regression bugs and accelerate release cycles</li>
+                        <li>Collaborated closely with UX/UI designers to translate complex user journeys into intuitive and performant mobile experiences</li>
+                    </ul>
+                </div>
+
+                <div class="role">
+                    <div class="role-title">iOS Developer — Cinéma Pathé</div>
+                    <div class="role-period">October 2022 – August 2023 (11 months)</div>
+                    <ul>
+                        <li>Maintained and enhanced the existing Cinéma Pathé iOS application, resolving critical bugs and improving app stability</li>
+                        <li>Developed new features including showtime browsing, cinema geolocation, and push notification integration</li>
+                        <li>Refactored UI components for improved performance and consistency across different device sizes and iOS versions</li>
+                        <li>Conducted thorough code reviews to maintain high code quality standards and ensure adherence to architectural guidelines</li>
+                    </ul>
+                    <p class="tech-line"><strong>Languages &amp; Technologies:</strong> Swift, SwiftUI, UIKit, Combine, Core Data, REST APIs</p>
+                    <p class="tech-line"><strong>Tools:</strong> Xcode, Git, GitFlow, JIRA, Figma, Fastlane</p>
+                </div>
+            </div>
+
+            <!-- Digit-U -->
+            <div class="company">
+                <div class="company-header">
+                    <span class="company-name">Digit-U</span>
+                    <span class="company-meta">3 years 10 months · Tunis, Tunisia</span>
+                </div>
+
+                <div class="role">
+                    <div class="role-title">Team Lead iOS Developer</div>
+                    <div class="role-period">February 2020 – October 2022 (2 years 9 months)</div>
+                    <ul>
+                        <li>Led a team of iOS developers, conducting code reviews, mentoring team members, and defining technical standards for mobile projects</li>
+                        <li>Architected and developed a <strong>NeoBank iOS Application</strong> from the ground up, implementing secure authentication, real-time transaction tracking, account management, and payment features using Swift and UIKit</li>
+                        <li>Built a full-featured <strong>E-Commerce iOS Application</strong> with product catalog browsing, cart management, checkout flows, and order tracking capabilities</li>
+                        <li>Developed <strong>Istishara</strong>, a consultancy app enabling real-time video/audio consultations with professionals, integrating TwilioSDK for communication and Firebase for real-time data synchronization</li>
+                        <li>Created a social media application featuring user profiles, feeds, media sharing, real-time messaging, and push notifications</li>
+                        <li>Developed a configurable webview-based application with native bridge communication for hybrid content delivery</li>
+                    </ul>
+                    <p class="tech-line"><strong>Languages &amp; Technologies:</strong> iOS, Swift, UIKit, Core Animation, AVFoundation, CoreImage, Metal, TwilioSDK, Firebase SDK</p>
+                    <p class="tech-line"><strong>Design Patterns:</strong> Coordinator, Observer</p>
+                    <p class="tech-line"><strong>Tools:</strong> Xcode, Postman, Git, GitFlow, GitLab, JIRA, Zeplin</p>
+                    <p class="tech-line"><strong>Project Management:</strong> Scrum</p>
+                </div>
+
+                <div class="role">
+                    <div class="role-title">iOS Developer</div>
+                    <div class="role-period">August 2019 – January 2020 (6 months) · Ariana, Tunisia</div>
+                    <ul>
+                        <li>Contributed to the development of the NeoBank iOS Application, implementing core banking features including account overview, transaction history, and fund transfer workflows</li>
+                        <li>Collaborated with backend teams to integrate RESTful APIs and ensure reliable data synchronization</li>
+                        <li>Participated in sprint planning, daily standups, and retrospectives as part of an Agile development process</li>
+                    </ul>
+                    <p class="tech-line"><strong>Languages &amp; Technologies:</strong> iOS, Swift, UIKit, Core Animation</p>
+                    <p class="tech-line"><strong>Tools:</strong> Xcode, Postman, Git, GitFlow, GitLab, JIRA, Zeplin</p>
+                </div>
+
+                <div class="role">
+                    <div class="role-title">iOS Development Intern</div>
+                    <div class="role-period">January 2019 – July 2019 (7 months) · Ariana, Tunisia</div>
+                    <ul>
+                        <li>Contributed to the development of the NeoBank iOS Application, building UI screens and integrating API services under senior developer guidance</li>
+                        <li>Gained hands-on experience with iOS development best practices, version control workflows, and Agile methodologies</li>
+                    </ul>
+                    <p class="tech-line"><strong>Languages &amp; Technologies:</strong> iOS, Swift, UIKit, Core Animation</p>
+                </div>
+            </div>
+
+            <!-- ESPRIT -->
+            <div class="company">
+                <div class="company-header">
+                    <span class="company-name">ESPRIT</span>
+                </div>
+                <div class="role">
+                    <div class="role-title">Software Engineering Intern</div>
+                    <div class="role-period">July 2018 – September 2018 (3 months) · Ariana, Tunisia</div>
+                    <ul>
+                        <li>Designed and developed a web application for collecting and analyzing data from a post-graduation survey of ESPRIT alumni, providing interactive dashboards and statistical visualizations for career tracking insights</li>
+                        <li>Built a comprehensive project management web application for ESPRIT's PiDev (end-of-studies) projects, enabling supervisors and students to manage submissions, track progress, and coordinate evaluations</li>
+                    </ul>
+                    <p class="tech-line"><strong>Technologies:</strong> Angular 4, LinkedIn SDK, Node.js, Symfony 3.4, PHP, MySQL</p>
+                </div>
+            </div>
+
+            <!-- Die Künstlerdienste -->
+            <div class="company">
+                <div class="company-header">
+                    <span class="company-name">Die Künstlerdienste</span>
+                </div>
+                <div class="role">
+                    <div class="role-title">Freelance Web Developer</div>
+                    <div class="role-period">June 2017 – July 2017 (2 months) · Tunis, Tunisia</div>
+                    <ul>
+                        <li>Designed and developed the <a href="https://www.kuenstlerdienste.eu/" rel="noopener noreferrer">kuenstlerdienste.eu</a> website, a platform for showcasing talent profiles and portfolios with an integrated administration panel for content and model management</li>
+                        <li>Implemented responsive front-end design and a custom CMS backend for dynamic content updates</li>
+                    </ul>
+                    <p class="tech-line"><strong>Technologies:</strong> Symfony 3.x, HTML5, CSS3, Bootstrap 3.x</p>
+                </div>
+            </div>
+
+            <!-- Telecommunications Sector Training Center -->
+            <div class="company">
+                <div class="company-header">
+                    <span class="company-name">Telecommunications Sector Training Center</span>
+                </div>
+                <div class="role">
+                    <div class="role-title">Web Development Intern</div>
+                    <div class="role-period">February 2016 – May 2016 (4 months) · Tunis, Tunisia</div>
+                    <ul>
+                        <li>Developed a preregistration system for training center applicants, streamlining the enrollment process with automated form handling and status tracking</li>
+                        <li>Built an academic platform providing students with access to grades, timetables, course materials, and announcements</li>
+                        <li>Created an admin dashboard for managing users, roles, and dynamic website content</li>
+                        <li>Implemented an end-of-studies project management module for tracking submissions, supervisor assignments, and evaluation workflows</li>
+                    </ul>
+                    <p class="tech-line"><strong>Technologies:</strong> Symfony 3, PHP5, MySQL, Bootstrap, HTML5, CSS3</p>
+                </div>
+            </div>
+
+            <!-- SOREPCO -->
+            <div class="company">
+                <div class="company-header">
+                    <span class="company-name">SOREPCO Composites World</span>
+                </div>
+                <div class="role">
+                    <div class="role-title">Web Development Intern</div>
+                    <div class="role-period">June 2014 – July 2014 (2 months)</div>
+                    <ul>
+                        <li>Assisted in the development of internal web tools for the composites manufacturing company</li>
+                        <li>Gained foundational experience in web development workflows and professional software development practices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <h2 class="section-title">🎓 Education</h2>
+            <div class="edu-item">
+                <h4>Engineer's Degree — Information Technology</h4>
+                <p>ESPRIT (Private College of Engineering and Technology) · 2016 – 2019</p>
+            </div>
+            <div class="edu-item">
+                <h4>Fundamental License — Information Technology &amp; Multimedia</h4>
+                <p>ISAMM (Institut Supérieur des Arts Multimédia de la Manouba) · 2013 – 2016</p>
+            </div>
+        </div>
+
+        <!-- Top Skills -->
+        <div class="section">
+            <h2 class="section-title">🛠️ Top Skills</h2>
+            <table class="skills-table">
+                <tr><th>Core</th><td>SwiftUI, iOS Development, Swift</td></tr>
+                <tr><th>Frameworks</th><td>UIKit, Core Animation, AVFoundation, CoreImage, Metal, Firebase SDK, TwilioSDK</td></tr>
+                <tr><th>Architecture</th><td>Coordinator Pattern, Observer Pattern</td></tr>
+                <tr><th>Web</th><td>Angular, Node.js, Symfony, PHP, MySQL</td></tr>
+                <tr><th>Tools</th><td>Xcode, Git, GitFlow, GitLab, Postman, JIRA, Zeplin</td></tr>
+                <tr><th>Project Management</th><td>Scrum</td></tr>
+            </table>
+        </div>
+
+        <!-- Languages -->
+        <div class="section">
+            <h2 class="section-title">🌐 Languages</h2>
+            <ul class="lang-list">
+                <li>🇹🇳 Arabic (Native or Bilingual)</li>
+                <li>🇫🇷 French (Native or Bilingual)</li>
+                <li>🇬🇧 English (Full Professional)</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        💬 I'm always open to connecting with fellow professionals, sharing insights, and exploring potential collaborations. If you're passionate about iOS development, technology trends, or simply want to connect, feel free to reach out!
+    </div>
+
+</div>
+
+</body>
+</html>
